@@ -1,0 +1,26 @@
+
+- First i added the sql script in the folder to make you able to establish our database then dealing with it ,
+	how ? 
+	1 - open the workbench .
+	2 - make new scheme named (java-project).
+	3 - use the sql script(db2.sql) to create all tables .
+	4 - ensure that the connection has been created between the database and the java project .
+
+- After making these steps you can test all classes and the database will be affected .
+
+- If you want test without the database you can use the entity classes in the main 
+	without using the DAO classes .
+
+----------------------------------------------------------------------------------------------
+
+- I added these three classes (Entity , DTO , DAO ) for each class , to separate the dealing with the database and make all classes safe while transferring from one place to another.
+
+DTO (Data Transfer Object) Class: Should contain only data members and their associated getters and setters. No business logic or methods that perform actions should be included here.
+
+Entity Class: Can include business logic methods, behavior specific to the entity, and overridden methods for string representation.
+
+DAO (Data Access Object) Class: Contains methods for database interactions, such as CRUD operations.
+
+----------------------------------------------------------------------------------------------
+
+ < Thanks For Your Time , I Hope You Like The Project >
